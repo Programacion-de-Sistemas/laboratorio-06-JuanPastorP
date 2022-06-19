@@ -2,6 +2,6 @@
 #include "figures.h"
 
 void display(){
-  char** blackKnight = reverse(knight);
-  interpreter(blackKnight);
+  char** two = join(whiteSquare, reverse(whiteSquare));
+  interpreter(two);
 }
