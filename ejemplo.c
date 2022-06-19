@@ -6,6 +6,6 @@ void display(){
   char** cuatro = join(dos, dos);
   char** ocho = join(cuatro, cuatro);
   char** dosFilas = up(ocho, flipV(ocho));
-  char** cuatroFilas = up(dosFilas, flipV(dosFilas));
+  char** cuatroFilas = up(dosFilas, dosFilas);
   interpreter(cuatroFilas);
 }
