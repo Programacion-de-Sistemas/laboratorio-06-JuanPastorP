@@ -2,6 +2,6 @@
 #include "figures.h"
 
 void display(){
-  char** two = join(whiteSquare, reverse(whiteSquare));
-  interpreter(two);
+  char** cuatro = flipV(join(whiteSquare, reverse(whiteSquare)));
+  interpreter(cuatro);
 }
