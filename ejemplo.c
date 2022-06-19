@@ -7,5 +7,7 @@ void display(){
   char** ocho = join(cuatro, cuatro);
   char** dosFilas = up(ocho, flipV(ocho));
   char** cuatroFilas = up(dosFilas, dosFilas);
-  interpreter(cuatroFilas);
+  char** piezas =join(join(join(join(join(join(join(rook, knight),bishop),king),queen),bishop),knight),rook);
+  char** piezasTablero = superImpose(piezas, piezas);
+  interpreter(piezasTablero);
 }
