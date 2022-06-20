@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 char** flipV(char**){
-   char** figura = king;
+    int main(){
+    char** figura = king;
     int alto = 0;
     int ancho = 0;
     char** altoAux = figura;
@@ -9,6 +10,7 @@ char** flipV(char**){
     while (*altoAux){altoAux++; alto++;}
     while (*anchoAux){anchoAux++; ancho++;}
     char nuevo[alto][ancho];
+    int altoFijo = alto;
 
     while (*figura)
     {
@@ -18,10 +20,46 @@ char** flipV(char**){
     }
     
     
-    while (*nuevo)
+    while (altoFijo <= 0 )
     {
             printf("%s\n",*nuevo);
         
-        nuevo++;
+       altoFijo--;
     }
+    
+}
+}
+char** flipH(char**){
+    int main(){
+    char** figura = king;
+    int alto = 0;
+    int ancho = 0;
+    char** altoAux = figura;
+    char* anchoAux = *figura;
+    while (*altoAux){altoAux++; alto++;}
+    while (*anchoAux){anchoAux++; ancho++;}
+    char nuevo[alto][ancho];
+    int anchoFijo = ancho; 
+
+    while (*figura)
+    {
+        while(**figura){
+             nuevo[alto][ancho] = **figura;
+             *figura++;
+             ancho--;
+        }
+        ancho = anchoFijo;
+        figura++;
+        alto--;
+    }
+    
+    
+    while (altoFijo = 0 )
+    {
+            printf("%s\n",*nuevo);
+        
+       altoFijo--;
+    }
+    
+}
 }
