@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-char** flipV(char**){
+char** flipV(char** figura){
     int main(){
     char** figura = king;
     int alto = 0;
@@ -29,7 +29,7 @@ char** flipV(char**){
     
 }
 }
-char** flipH(char**){
+char** flipH(char** figura){
     int main(){
     char** figura = king;
     int alto = 0;
@@ -60,6 +60,34 @@ char** flipH(char**){
         
        altoFijo--;
     }
+    
+}
+}
+char** superImpose(char** figura1, char** figura2){
+    int main(){
+    char** figura = king;
+    int alto = 0;
+    int ancho = 0;
+    char** altoAux = figura;
+    char* anchoAux = *figura;
+    while (*altoAux){altoAux++; alto++;}
+    while (*anchoAux){anchoAux++; ancho++;}
+
+    while (*figura1)
+    {
+        while(**figura1){
+            if (**figura1 == " ")
+            {
+                **figura1 = **figura2;
+            }
+
+             *figura1++;
+             *figura2++;
+        }
+        figura1++;
+        figura2++;
+    }
+    
     
 }
 }
