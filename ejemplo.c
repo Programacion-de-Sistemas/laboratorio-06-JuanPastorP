@@ -38,5 +38,5 @@ void display(){
   
 
 
-  interpreter(tableroLleno);
+  interpreter(reverse(ochoPiezas));
 }
