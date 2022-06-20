@@ -11,20 +11,27 @@ int main(){
     while (*altoAux){altoAux++; alto++;}
     while (*anchoAux){anchoAux++; ancho++;}
     char nuevo[alto][ancho];
+    int anchoFijo = ancho; 
+    int altoFijo = alto;
 
     while (*figura)
     {
-        nuevo[alto] = *figura;
+        while(**figura){
+             nuevo[alto][ancho] = **figura;
+             *figura++;
+             ancho--;
+        }
+        ancho = anchoFijo;
         figura++;
         alto--;
     }
     
     
-    while (*nuevo)
+    while (altoFijo >= 0 )
     {
             printf("%s\n",*nuevo);
         
-        nuevo++;
+       altoFijo--;
     }
     
         
